@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>My Library</h1>
+    </header>
+
+    <div class="container">
+
+        <button type="button" class="add-book-btn">Add Book</button>
+
+        <div class="library-section"></div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Copyright © The Odin Project 2022</p>
+    </footer>
+
+    <form id="book-form" class="book-form">
+        
+        <div>Add new book</div>
+
+        <input type="text" id="title" name="title" placeholder="Title" maxlength="100" required>
+
+        <input type="text" id="author" name="author" placeholder="Author" maxlength="100" required>
+
+        <input type="number" id="pages" name="pages" placeholder="Pages" min="1" max="10000" required>
+
+        <label class="checkbox-label" for="read">
+            <input type="checkbox" id="read" name="read" value="read">
+            <span>I have read this book</span>
+        </label>
+
+        <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+        <button type="button" class="close-btn">Close</button>
+
+    </form>
+    
+</body>
+</html>

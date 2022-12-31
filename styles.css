@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: 350px;
+}
+
+/* Header */
+
+.header {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 36px;
+    background-color: #393f4d;
+}
+
+/* Main Container */
+
+.container {
+    flex: 1;
+    text-align: center;
+    padding: 36px;
+}
+
+/* Library */
+
+.library-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 36px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.library-section p,
+.library-section .checkbox-container {
+    padding-bottom: 24px;
+    align-content: center;
+}
+
+.checkbox {
+    transform: scale(2);
+    margin-right: 11px;
+}
+
+.book {
+    height: 400px;
+    padding: 24px;
+    background-color: #e2e7ec;
+}
+
+/* Footer */
+
+.footer {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px;
+    background-color: #393f4d;
+}
+  
+/* Add book form */
+
+.book-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 12px;
+    padding: 24px;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.book-form div {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.book-form input[type="text"],
+.book-form input[type="number"] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.book-form input:focus {
+	outline: none;
+}
+
+.book-form input:not(:focus):invalid {
+	border-color: red;
+}
+
+.book-form input:not(:focus):valid {
+	border-color: green;
+}
+
+.checkbox-label {
+    margin-bottom: 12px;
+}
+
+.checkbox-label span {
+    font-size: 18px;
+}
+
+/* Buttons */
+
+/* Book Form buttons */
+
+.book-form button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+
+    width: 150px;
+}
+
+.book-form .submit-btn {
+    background-color: #5995DA;
+}
+
+.book-form .submit-btn:hover {
+    background-color: #76AEED;
+}
+
+.book-form .submit-btn:active {
+    background-color: #407FC7;
+}
+
+.book-form .close-btn {
+    background-color: #e08181;
+}
+
+.book-form .close-btn:hover {
+    background-color: #e0a9a9;
+}
+
+.book-form .close-btn:active {
+    background-color: #da7474;
+}
+
+/* "Add Book" button */
+
+.add-book-btn {
+    color: #FFFFFF;
+    margin-bottom: 36px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #5995DA;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.add-book-btn:hover {
+    background-color: #76AEED;
+}
+
+.add-book-btn:active {
+    background-color: #407FC7;
+}
+
+/* "Remove" book button */
+
+.del-book-btn {
+    color: #FFFFFF;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #e08181;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.del-book-btn:hover {
+    background-color: #e0a9a9;
+}
+
+.del-book-btn:active {
+    background-color: #da7474;
+}
